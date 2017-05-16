@@ -1,0 +1,31 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>System Js Start</title>
+    <meta name="description" content="System Js Startup Point">
+    <meta name="author" content="SitePoint">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <p>Check the console F12</p>
+    <p>Check the sources tab and open the
+        <strong> <i> dist </i> </strong> folder, you will see the compiled files...</p>
+    <!--SystemJs-->
+    <script src="lib/SystemJs/system.js"></script>
+    <!--Main Config-->
+    <script src="main.js"></script>
+    <script>
+        //=================================================
+        // Entry Point
+        //=================================================
+        SystemJS.import('sampleRec.js').then(function (d) {
+            new d.MainClass().start();
+        });
+    </script>
+</body>
+</html>
