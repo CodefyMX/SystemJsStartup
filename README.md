@@ -6,7 +6,7 @@ SystemJs startup point
 - Node.js
 ### Optional
 - [vscode-preview-server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server) for live server preview
-## How to start
+### How to start
 - Run `npm install` command in the main folder
 - Open the proyect folder in vs code or run `code .` command in the main folder.
 - Ctrl + shift + b to start the build task
