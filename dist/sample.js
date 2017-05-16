@@ -49,11 +49,6 @@ System.register([], function (_export, _context) {
                     value: function showMessage() {
                         console.log(this.message);
                     }
-                }, {
-                    key: "setMessage",
-                    value: function setMessage(message) {
-                        this.message = message;
-                    }
                 }]);
 
                 return MyFirstModule;
